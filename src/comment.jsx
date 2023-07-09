@@ -1,12 +1,8 @@
-import react from "react";
-const comment = () => {
-  return(
-    <div className="comment">
-
-        <a href='/' className="avatar">
-            <img src={faker.image.avatar() alt="avatar"} ></img>
-
-        </a>
+function Comment() {
+  return (
+    <div>
+      <h1>This is the comment page</h1>
     </div>
-  )
-};
+  );
+}
+export default Comment;

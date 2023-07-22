@@ -1,0 +1,23 @@
+
+.container {
+    text-align: center;
+    width: 80vw;
+    display: block;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin:auto ;
+} 
+.title{
+    color: red;
+}
+.content {
+    font-size: 14px; 
+    width: 90%;
+}
+.expense{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+

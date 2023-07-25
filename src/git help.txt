@@ -1,0 +1,16 @@
+git status
+git add .
+git commit -m "x"
+git checkout -b branch-Name //creating and go to branch
+pushing branch : git push -u origin branch-Name
+then ...
+go to GitHub > pull request > push > merge
+done with branch ...
+go to main branch :
+git checkout main   (switch)
+git pull 
+creating New Branch
+
+xxxxxx
+
+

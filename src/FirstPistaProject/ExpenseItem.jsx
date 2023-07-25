@@ -11,13 +11,11 @@ const ExpenseItem = (props) => {
     const expenseTitle='Care insurance';
     const expenseAmount = 300.45; */
   return (
-    <div className="container">
-      {/*     <h1 className='title'>books</h1>
-     <p className='content'>profound role in shaping perspective</p> */}
-      <div className="expense">
-        <ExpenseDate props={props.date} />
+    <div className="expense-item">
+      <div className="expense-item__description">
         <div>{props.title}</div>
-        <div>${props.amount}</div>
+        <div className="expense-price">${props.amount}</div>
+        <ExpenseDate date={props.date} />
       </div>
     </div>
   );

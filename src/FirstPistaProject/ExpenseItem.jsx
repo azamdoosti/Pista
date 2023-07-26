@@ -1,6 +1,7 @@
 import ExpenseDate from "./ExpenseDate";
-import "./content.css";
+// import "./content.css";
 import React from "react";
+import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
   /* const month = props.date.toLocaleDateString("en-Us", { month: "long" });
@@ -13,9 +14,9 @@ const ExpenseItem = (props) => {
   return (
     <div className="expense-item">
       <div className="expense-item__description">
-        <div>{props.title}</div>
-        <div className="expense-price">${props.amount}</div>
         <ExpenseDate date={props.date} />
+        <div>{props.title}</div>
+        <div className="expense-item__price">${props.amount}</div>
       </div>
     </div>
   );

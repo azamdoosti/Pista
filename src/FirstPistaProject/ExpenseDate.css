@@ -1,13 +1,14 @@
 .expense-date {
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    width: 5.0rem;
-    border: 1px solid rgb(236, 222, 222);
-    background-color: rgb(186, 235, 235);
+    width: 7.0rem;
+    /* border: 1px solid rgb(236, 222, 222); */
+    background-color: rgb(180, 187, 187);
     color: rgb(43, 5, 5);
-    border-radius: 12px;
+    border-radius: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 .expense-date__year {

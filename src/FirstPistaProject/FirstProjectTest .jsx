@@ -1,6 +1,6 @@
 import React from "react";
-import ExpenseItem from "./ExpenseItem";
-// import Footer from './Footer'
+import Expenses from "./Expenses";
+import NewExpense from "./NewExpense/newExpense";
 
 const FirstProjectTest = () => {
   const expenses = [
@@ -23,27 +23,16 @@ const FirstProjectTest = () => {
       date: new Date(2020, 4, 15),
     },
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log("I am in App component");
+    console.log(expense);
+  };
   return (
-    <div>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
-      {/* <Footer /> */}
-    </div>
+    <>
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Expenses expenses={expenses} />
+    </>
   );
 };
 

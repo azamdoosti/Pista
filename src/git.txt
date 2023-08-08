@@ -2,7 +2,7 @@ git status
 git add .
 git commit -m "x"
 git checkout -b branch-Name //creating and go to branch
-pushing branch : git push -u origin branch-Name
+pushing branch : git push -u origin branch-Name  // git push -u  origin Pista-Expense  
 then ...
 go to GitHub > pull request > push > merge
 done with branch ...

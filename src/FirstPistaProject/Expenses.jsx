@@ -1,10 +1,15 @@
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 import Card from "./Card";
+import ExpensesFilter from "./Expensefilter";
 
 const Expenses = ({ expenses }) => {
   return (
     <Card className="expenses">
+      <ExpensesFilter
+        selected={filteredYear}
+        onChangeFilter={filterChangeHandler}
+      />
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -14,7 +19,8 @@ const Expenses = ({ expenses }) => {
       <ExpenseItem
         title={expenses[1].title}
         amount={expenses[1].amount}
-        date={expenses[1].date}
+        dat
+        e={expenses[1].date}
       />
 
       <ExpenseItem

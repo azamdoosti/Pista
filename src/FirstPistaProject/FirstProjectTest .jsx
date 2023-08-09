@@ -26,13 +26,12 @@ const FirstProjectTest = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
-      return [expense, ...prevExpenses]
-    })
-      
-    }
-    /*  console.log("I am in App component");
-    console.log(expense); */
+      return [expense, ...prevExpenses];
+    });
   };
+  /*  console.log("I am in App component");
+    console.log(expense); */
+
   return (
     <>
       <NewExpense onAddExpense={addExpenseHandler} />

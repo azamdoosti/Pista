@@ -4,21 +4,21 @@ import NewExpense from "./NewExpense/newExpense";
 const DUMMY_EXPENSES = [
   {
     id: "a1",
-    title: "toil paper",
+    title: "toil paper1",
     amount: 93.5,
-    date: new Date(2020, 7, 15),
+    date: new Date(2022, 7, 15),
   },
   {
     id: "a2",
-    title: "toil paper",
+    title: "toil paper2",
     amount: 90.5,
     date: new Date(2020, 9, 15),
   },
   {
     id: "a3",
-    title: "toil paper",
+    title: "toil paper3",
     amount: 91.5,
-    date: new Date(2020, 4, 15),
+    date: new Date(2021, 4, 15),
   },
 ];
 
